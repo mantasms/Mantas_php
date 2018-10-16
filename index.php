@@ -1,14 +1,21 @@
+
 <?php date_default_timezone_set("Europe/Vilnius");
+// komentaras PHP
 
 ?>
 
-<html lang="en" dir="ltr">    
+<html lang="en" dir="ltr">   
+    <!-- komentaras-->
   <head>
     <meta charset="utf-8">
-    <title> PHP lydės ir <?php print date ('D', strtotime('+1 day')) . ' !'; ?> </title>
+    <title> PHP lydės ir <?php print date ('Y', strtotime('+' . rand (1, 10) . 'years')) . ' !'; ?> </title>
   </head>
   
-  <h1> Mantas - PHP su manim buvo ir <?php print date ('h',strtotime (' -1 hour')) . ' valandą!'; ?> </h1>
-  <p> <?php print date('Y',strtotime(' +1 year')) . ' metai, '; ?> ne už kalnų !</p>
-  
+  <body style="background-color:rgb(<?php print rand(0, 255) . ',' . rand(0, 255) . ',' . rand(0, 255); ?>)">
+        
+      
+    <h1> Mantas - galbut turesiu <?php print rand (1, 5) . ' vaikus!'; ?> </h1>
+    <p> trampas nebebus prezidentu <?php print date('Y, m, d', strtotime('+' . rand (3, 10) . 'years')) ; ?> </p>
+    
+  </body>
 </html>
