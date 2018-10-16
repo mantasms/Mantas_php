@@ -5,10 +5,10 @@
 <html lang="en" dir="ltr">    
   <head>
     <meta charset="utf-8">
-    <title> <?php print 'Aš ' . date('l') . ' ir PHP'; ?> </title>
+    <title> PHP lydės ir <?php print date ('D', strtotime('+1 day')) . ' !'; ?> </title>
   </head>
   
-  <h1> Mantas -HTML <?php print 'ir PHP'; ?> asas jau nuo <?php print date ('Y') . ' metų'; ?></h1>
-  <p> Viskas prasidėjo <?php print date('m') . ' mėnesio, ' . date('d') . ' dieną! '; ?> </p>
+  <h1> Mantas - PHP su manim buvo ir <?php print date ('h',strtotime (' -1 hour')) . ' valandą!'; ?> </h1>
+  <p> <?php print date('Y',strtotime(' +1 year')) . ' metai, '; ?> ne už kalnų !</p>
   
 </html>
