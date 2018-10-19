@@ -1,15 +1,24 @@
 <?php
-$fridge = ["Jogurtas", "Kebabas", "Alus", "Sugede vaisiai", "Supuves avokadas"];
-$i= rand(0, count ($fridge)-1);
-$text = $fridge [$i];
-var_dump ($fridge);
+$fridge = ["Jogurtas","Kebabas", "Alus", "Sugede vaisiai", "Supuves avokadas"];
+$text = ' ';
+$noriu = ["Kebabas", "Alus", "Pica"];
 
-?>
-
-<html>
+foreach ($noriu as $kazkas) {
+    
+ if (in_array($kazkas, $fridge)) {
+         
+     $text.=  "$kazkas: turiu <br>";
+ }
+ 
+else {
+    $text.=  "$kazkas: Neturiu <br>";
+}
+}
+ ?>
+ <html>
     <body>
-        <!--<h1> Saldytuvo turinys: </h1>-->  
-        <p> <?php print $text ; ?></p>
-
-    </body>
-</html>
+        <h1> Saldytuvo turinys: </h1>  
+        <p> <?php print "$text "; ?></p>
+ 
+     </body>
+</html> 
