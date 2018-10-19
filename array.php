@@ -1,17 +1,19 @@
 <?php
-$fridge = array ("Jogurtas","Kebabas", "Alus", "Sugede vaisiai", "Supuves avokadas");
-$text = null;
+$fridge = ["Jogurtas", "Kebabas", "Alus", "Sugede vaisiai", "Supuves avokadas"];
+$text = ' ';
 
 
-for ($i = 0; $i <count ($fridge); $i++) {
-    
-    $text .= $fridge [$i] . "<br>";
+foreach ($fridge as $produktas) {
+
+    $text.=  $produktas . "<br>";
 }
+
 ?>
+
 <html>
     <body>
         <h1> Saldytuvo turinys: </h1>  
-        <p> <?php print "$text "; ?></p>
- 
+        <p> <?php print $text ; ?></p>
+
     </body>
 </html>
