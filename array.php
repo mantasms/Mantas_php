@@ -2,6 +2,7 @@
 $fridge = ["Jogurtas", "Kebabas", "Alus", "Sugede vaisiai", "Supuves avokadas"];
 $i= rand(0, count ($fridge)-1);
 $text = $fridge [$i];
+var_dump ($fridge);
 
 ?>
 
