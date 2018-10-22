@@ -1,23 +1,20 @@
 <?php
-$fridge = ['Alus', 'Kebabas', 'Burokai', 'Suris'];
-$text = ' ';
-$noriu = ['Kebabas', 'Alus', 'Pjuklas'];
+$fridge = ['kebabas' => 2.50,
+    'alus' => 1.89,
+    'burokai' => 1.50
+];
 
-foreach ($fridge as $key => $kazkas) {
-    
- if (in_array($kazkas, $noriu)) {
-    unset($fridge[$key]);
+//var_dump($fridge);
 
- }
-}
-        var_dump($fridge);
+$index = array_keys($fridge);
+$random = rand(0, count($index) - 1);
 
 
- ?>
- <html>
+?>
+<html>
     <body>
-        <h1> Saldytuvo turinys: </h1>  
-        <p> <?php print "$text "; ?></p>
- 
-     </body>
+        <h1> Bet kas: </h1>  
+        <p> <?php print "$index[$random] "; ?></p>
+
+    </body>
 </html> 
