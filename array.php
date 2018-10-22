@@ -1,20 +1,36 @@
 <?php
-$fridge = ['kebabas' => 2.50,
+$products = ['kebabas' => 2.50,
     'alus' => 1.89,
     'burokai' => 1.50
 ];
 
-//var_dump($fridge);
-
-$index = array_keys($fridge);
-$random = rand(0, count($index) - 1);
-
-
+var_dump($products);
 ?>
 <html>
-    <body>
-        <h1> Bet kas: </h1>  
-        <p> <?php print "$index[$random] "; ?></p>
+    <head>
+        <title>Produktai</title>
+        <style>
+            .products {
+                widht: 150px;
+                height: 150px;
+            }
+            .kebabas {background-img: url(https://foodout.lt/uploads/dishes/thumb_type1_noid_151231105642_758808d6c22af0b9af63df51a31d898f.png);
+            }
+            .alus {background-image: url(https://g2.dcdn.lt/images/pix/file59627425_6747ce14.jpg);
+            }
+            .burokai {background-image: url(http://www.dietosmeniu.lt/data/ingredients/large/burokeliai.jpg);
+            }
 
-    </body>
+        </style>
+    </head>
+    <body>
+<?php foreach ($products as $key => $value): ?>
+
+    <div class = "products <?php print $key; ?>">
+    
+            <?php print $value; ?>
+    </div>
+        <?php endforeach ?>
+
+</body>
 </html> 
