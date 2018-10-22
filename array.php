@@ -1,19 +1,18 @@
 <?php
-$fridge = ["Jogurtas","Kebabas", "Alus", "Sugede vaisiai", "Supuves avokadas"];
+$fridge = ['Alus', 'Kebabas', 'Burokai', 'Suris'];
 $text = ' ';
-$noriu = ["Kebabas", "Alus", "Pica"];
+$noriu = ['Kebabas', 'Alus', 'Pjuklas'];
 
-foreach ($noriu as $kazkas) {
+foreach ($fridge as $key => $kazkas) {
     
- if (in_array($kazkas, $fridge)) {
-         
-     $text.=  "$kazkas: turiu <br>";
+ if (in_array($kazkas, $noriu)) {
+    unset($fridge[$key]);
+
  }
- 
-else {
-    $text.=  "$kazkas: Neturiu <br>";
 }
-}
+        var_dump($fridge);
+
+
  ?>
  <html>
     <body>
