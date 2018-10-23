@@ -1,30 +1,50 @@
 <?php
-    $array1 = [2,3,4];
-    $array2 = [5,6,7];
+$panos = [
+    [
+        'vardas' => 'Monika',
+        'Grazi' => true,
+        'protinga' => false
+    ],
+    [
+        'vardas' => 'Greta',
+        'Grazi' => true,
+        'protinga' => true
+    ],
+    [
+        'vardas' => 'Laura',
+        'Grazi' => false,
+        'protinga' => true
+    ],
+    [
+        'vardas' => 'Viktorija',
+        'Grazi' => true,
+        'protinga' => true
+    ],
+    [
+        'vardas' => 'Aldona',
+        'Grazi' => true,
+        'protinga' => true
+    ]
     
-/*
- * @param integer array1 vienas masyvas su reiksmemis
- * @param integer array2 kitas masyvas su reiksmemis
- * @return integer suma array1 ir array2 
- */
-function rank($array1, $array2) {
-    $a = array_sum($array1);
-    $b = array_sum($array2);
-    
-    return ($a + $b);
-    
+];
+
+function girls($panos){
+    $geros = [];
+    foreach($panos as $pana){
+        if($pana['Grazi'] && $pana['protinga']){
+            $geros[] = $pana['vardas'];
+        }
+    }
+    return $geros;
 }
+$geros = girls($panos);
+
 ?>
+
 <html>
-    <header>
-        
-    </header>
     <body>
-
-        <h1>
-            <?php print " suma " . rank($a, $b); ?>
-        </h1>
-
+        <?php foreach($geros as $vardas): ?>
+        <h2><?php print $vardas; ?> </h2>
+        <?php endforeach; ?>
     </body>
-</html> 
-
+</html>
