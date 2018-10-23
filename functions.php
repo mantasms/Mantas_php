@@ -1,4 +1,5 @@
 <?php
+
 $panos = [
     [
         'vardas' => 'Monika',
@@ -37,6 +38,17 @@ function girls($panos){
     }
     return $geros;
 }
+
+function randgirl($panos){    
+    return $panos[rand(0, count($panos)-1)]['vardas'];
+}
+
+function percent($panos){
+    $geros = girls($panos);
+    $percent = count($geros) * 100 / count($panos);
+    return $percent;
+}
+
 $geros = girls($panos);
 
 ?>
@@ -46,5 +58,7 @@ $geros = girls($panos);
         <?php foreach($geros as $vardas): ?>
         <h2><?php print $vardas; ?> </h2>
         <?php endforeach; ?>
+        <h2>Random pana: <?php print randgirl($panos); ?></h2>
+        <h2>Graziu panu: <?php print percent($panos); ?> %</h2>
     </body>
 </html>
