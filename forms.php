@@ -1,16 +1,20 @@
 <?php
-$tekstas = 'ivesk skaiciu';
+$tekstas = 'Klausiu "Koks klausimas?"';
+$masyvas=['taip','Ne'];
 
-function kvadratas($skaicius) {
-    $kvadratas = $skaicius ** 2;
+function random_atsakymas($array) {
 
-    return $kvadratas;
+    $key = rand(0, count($array)-1);
+    $random_atsakymas = $array[$key];
+
+    return $random_atsakymas; /* arba tik "return $array[$key];" tada nereikia $random_atsakymo*/
+
 }
 
-if (isset($_POST['skaicius'])) {
-    $skaicius = $_POST['skaicius'];
-    if (!empty($skaicius)) {
-        $tekstas = 'Atsakymas ' . kvadratas($skaicius);
+if (isset($_POST['klausimas'])) {
+    $klausimas = $_POST['klausimas'];
+    if (!empty($klausimas)) {
+        $tekstas = 'Atsakymas: ' . random_atsakymas($masyvas);
     }
 //    print $_POST['skaicius']**2;
 //    print $kvadratas;
@@ -19,10 +23,11 @@ if (isset($_POST['skaicius'])) {
 <html>
 
     <form action="forms.php" method="POST">
-        Ka pakelti kvadratu: <input name="skaicius" type="text"/>
+        Klausimas: <input name="klausimas" type="text"/>
         <input type="submit"/>
     </form>
-
+    
+    <h1><?php print 'Klausimas: ' . $klausimas; ?></h1>
     <h1><?php print $tekstas; ?></h1>
 
 
