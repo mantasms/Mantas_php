@@ -17,9 +17,10 @@ if (isset($_GET['page'])) {
     elseif ($page == 'showcase') {
         $title = 'Mano paroda';
         $h1 = 'paroda: Skaiciuokle';
-    } else
+    } else {
         $title = 'Error';
         $h1 = 'Wrong Page!';
+    }
 };
 ?>
 
