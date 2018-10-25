@@ -1,37 +1,84 @@
 <?php
-var_dump($_GET);
+// Load all functions here
+require_once 'functions/core.php';
 
+// Enable/Disable Debugging
+$debug = true;
+
+/**
+ * Default $page array:
+ * Array of all page variables
+ * and settings
+ */
+$page = [
+    'title' => 'Error: 404',
+    'stylesheet' => 'main.css',
+    'content' => [
+        // Šitas variable 'rendered' bus sukurtas controllerio
+        // Tai bus ilgas HTML'o stringas sukurtas funkcijos
+        // render_page()
+        'rendered' => 'Tokio puslapio nerasta'
+    ],
+    'show_header' => true,
+    'show_footer' => true,
+];
+
+/**
+ * Čia yra mūsų "Router'is"
+ * Kiekvienam page iškviečiame
+ * atitinkamą controller'į
+ */
 if (isset($_GET['page'])) {
-    $page = $_GET['page'];
-
-    if ($page == 'home') {
-        $title = 'Home page';
-        $h1 = 'Sveiki atvykę!';
+    $page_name = $_GET['page'];
+    
+    switch ($page_name) {
+        case 'home':
+            run_controller($page, 'home');
+            break;
+        case 'cv':
+            run_controller($page, 'cv');
+            break;
+        case 'showcase':
+            run_controller($page, 'showcase');
+            break;
+        
+        default:
+            run_controller($page, 'home');
+    }
+} 
+    else  {
+        run_controller($page, 'home');
     }
 
-    elseif ($page == 'cv') {
-        $title = 'Mano CV';
-        $h1 = 'CV:';
-    }
-
-    elseif ($page == 'showcase') {
-        $title = 'Mano paroda';
-        $h1 = 'paroda: Skaiciuokle';
-    } else {
-        $title = 'Error';
-        $h1 = 'Wrong Page!';
-    }
-};
 ?>
-
 <html>
-
-    <title> <?php print $title; ?></title>
-
-    <h1><?php print $h1; ?></h1>
-
-
+    <head>
+        <title><?php print $page['title']; ?></title>
+        <link rel="stylesheet" type="text/css" href="/css/<?php print $page['stylesheet']; ?>">
+    </head>
+    <body>
+        <!-- Debug Output !-->
+        <?php if ($debug) var_dump($page); ?>
+        
+        <!-- Header !-->
+        <?php if ($page['show_header']): ?>
+            <div class="header-wrapper">
+                <?php include ('templates/objects/header.tpl.php'); ?>
+            </div>
+        <?php endif; ?>
+        
+        <!-- Content !-->
+        <?php if (isset($page['content']['rendered'])): ?>
+            <div class="content-wrapper">
+                <?php print $page['content']['rendered']; ?>
+            </div>
+        <?php endif; ?>
+        
+        <!-- Footer !-->
+        <?php if ($page['show_footer']): ?>
+            <div class="footer-wrapper">
+                <?php include ('templates/objects/footer.tpl.php'); ?>
+            </div>
+        <?php endif; ?>
+    </body>
 </html>
-
-
-
