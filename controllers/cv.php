@@ -2,14 +2,14 @@
 // Nustatome pagr. $page masyvui
 // vertes atitinkamai pagal tai, ką daro mūsų puslapis
 
-$page['title'] = 'Mano CV';
-$page['show_footer'] = false;
-$page['show_header'] = false;
+$page['title'] = 'CV';
+$page['show_footer'] = true;
+$page['show_header'] = true;
 
 // Visus 'content' skiltyje esančius kintamuosius
 // nustatome pasirinktinai pagal tai, kaip suformavome
 // template į kurį juos spausdinsime.
-$page['content']['title'] = 'CV:';
+$page['content']['title'] = 'Curriculm Vitae';
 $page['content']['subtitle'] = 'CV subtitle';
 
 // Index.php esame nurodę išspausdinti 'rendered' indekso

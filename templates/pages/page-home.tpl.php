@@ -3,7 +3,7 @@
     Tačiau, mes ją galėsime naudoti NEBŪTINAI TIK homepage. Su bet kuriuo
     kitu controlleriu galėsime ją "renderinti" taip pat. 
 !-->
-<div class="home-page">
+<div class="main">
     <h1><?php print $page['content']['title']; ?></h1>
 
     <!-- 

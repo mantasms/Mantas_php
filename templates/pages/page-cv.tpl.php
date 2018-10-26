@@ -1,18 +1,58 @@
-<!-- 
-    Tai yra template, kurią sukūrėme su mintim naudoti mūsų homepage`ui.
-    Tačiau, mes ją galėsime naudoti NEBŪTINAI TIK homepage. Su bet kuriuo
-    kitu controlleriu galėsime ją "renderinti" taip pat. 
-!-->
-<div class="home-page">
-    <h1><?php print $page['content']['title']; ?></h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" href="main.css">
+  </head>
 
-    <!-- 
-        Jeigu yra galimybė, kad tam tikrų elementų nespausdinsime,
-        pirma patikriname ar $page['content'][?kazkoks_indeksas?]
-        yra nustatytas prieš spausdindami tag'us
-    !-->
-    <?php if (isset($page['content']['subtitle'])): ?>
-        <h2><?php print $page['content']['subtitle']; ?></h2>
-    <?php endif; ?>
-    <hr>
-</div>
+  <body>
+    <div class="main">
+
+      <div class="fonas">
+
+        <div class="nuotrauka">
+
+          <img src="foto.jpg" alt="foto">
+
+        </div>
+
+      </div>
+
+      <div class="curriculum">
+
+        <h1>Mantas Sakaitis</h1>
+
+        <h3>Pageidaujama darbo pozicija</h3>
+
+        <h1><?php print $page['content']['title']; ?></h1>
+
+      </div>
+
+      <div class="personal">
+
+        <h2>Personal details</h2>
+
+      </div>
+
+      <div class="work">
+
+        <h2>Work Expirience</h2>
+
+      </div>
+
+      <div class="portfolio">
+
+        <h2>Portfolio</h2>
+
+      </div>
+
+      <div class="kontaktai">
+
+        <h2>Contact me</h2>
+
+    </div>
+
+
+  </body>
+
+</html>

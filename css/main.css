@@ -1,10 +1,127 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Oct 23, 2018, 9:47:08 PM
-    Author     : CodeAcademy
-*/
+/*.header-wrapper
+.content-wrapper
+.footer-wrapper*/*/
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+  border: solid #DDD;
+
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo img {
+  height: 60px;
+  padding-left: 15px;
+
+}
+
+.nav {
+  height: 60px;
+  display: flex;
+  padding-right: 60px;
+  word-spacing: 20px;
+
+}
+
+.cta {
+  color: white;
+
+  background: #00b0ec;
+
+  padding: 12px 18px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+}
+
+.fonas {
+  background: #DDD;
+  height: 200px;
+  align-items: center;
+
+}
+
+.nuotrauka {
+  align-items: center;
+
+}
+
+.curriculum {
+  height: auto;
+  text-align: center;
+
+}
+
+.personal {
+  height: 200px;
+  background-color: #DDD;
+  text-align: center;
+
+}
+
+.work {
+  height: 200px;
+  text-align: center;
+
+}
+
+.portfolio {
+  height: 200px;
+  background: #DDD;
+  text-align: center;
+
+}
+
+.kontaktai {
+  height: 200px;
+  text-align: center;
+
+}
+
+.footer {
+  height: 60px;
+  background: #DDD;
+
+}
+
+
+/* button{20px */
+/* } */
+/* .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: white;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+} */
+
 

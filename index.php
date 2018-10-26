@@ -3,7 +3,7 @@
 require_once 'functions/core.php';
 
 // Enable/Disable Debugging
-$debug = true;
+$debug = FALSE;
 
 /**
  * Default $page array:
