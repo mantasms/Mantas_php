@@ -10,7 +10,7 @@ $page['show_header'] = true;
 // nustatome pasirinktinai pagal tai, kaip suformavome
 // template į kurį juos spausdinsime.
 $page['content']['title'] = 'Sveiki atvykę į mano pirmąjį homepage!';
-$page['content']['subtitle'] = 'Subtitle';
+$page['content']['subtitle'] = 'Mantas Sakaitis';
 $page['content']['alus'] = 'Kiek alaus?';
 
 // Index.php esame nurodę išspausdinti 'rendered' indekso

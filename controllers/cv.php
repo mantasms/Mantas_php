@@ -10,7 +10,7 @@ $page['show_header'] = true;
 // nustatome pasirinktinai pagal tai, kaip suformavome
 // template į kurį juos spausdinsime.
 $page['content']['title'] = 'Curriculm Vitae';
-$page['content']['subtitle'] = 'CV subtitle';
+$page['content']['subtitle'] = 'Mantas Sakaitis';
 
 // Index.php esame nurodę išspausdinti 'rendered' indekso
 // turinį iš 'content'. Todėl šiam indeksui priskiriame

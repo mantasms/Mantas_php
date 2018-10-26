@@ -27,6 +27,8 @@ function kvadratas($skaicius) {
 }
 
 
+
+
 // Visus 'content' skiltyje esančius kintamuosius
 // nustatome pasirinktinai pagal tai, kaip suformavome
 // template į kurį juos spausdinsime.

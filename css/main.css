@@ -1,96 +1,128 @@
 /*.header-wrapper
 .content-wrapper
-.footer-wrapper*/*/
+.footer-wrapper*/*
+
+
 
 .main {
-  max-width: 900px;
-  margin: 0 auto;
-  align-items: center;
-  border: solid #DDD;
-
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    border: solid #DDD; 
 }
 
 .header {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    border: solid #DDD; 
 
 }
 
 .logo img {
-  height: 60px;
-  padding-left: 15px;
+    /*background-image: url(/css/images/foto.jpg);*/
+    height: 60px;
+    padding-left: 15px;
+    cursor: pointer;
 
 }
 
 .nav {
-  height: 60px;
-  display: flex;
-  padding-right: 60px;
-  word-spacing: 20px;
+    height: 60px;
+    display: flex;
+    padding-right: 60px;
+    word-spacing: 20px;
+    cursor: pointer;
 
+}
+.navigacijos buttons {
+    cursor: pointer;
 }
 
 .cta {
-  color: white;
+    color: white;
 
-  background: #00b0ec;
+    background: #00b0ec;
 
-  padding: 12px 18px;
+    padding: 12px 18px;
 
-  border-radius: 50%;
+    border-radius: 50%;
 
-  cursor: pointer;
+    cursor: pointer;
 
 }
 
 .fonas {
-  background: #DDD;
-  height: 200px;
-  align-items: center;
+    background: #DDD;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
 }
 
-.nuotrauka {
-  align-items: center;
 
+/*.home_nuotrauka {
+    background-image: url(/css/images/foto.jpg);
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    position: relative;
+    background-size: cover;
+    top: 40px;
+}*/
+
+.nuotrauka {
+    background-image: url(/css/images/foto.jpg);
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    position: relative;
+    background-size: cover;
+    top: 20px;
 }
 
 .curriculum {
-  height: auto;
-  text-align: center;
+    height: auto;
+    text-align: center;
 
 }
 
 .personal {
-  height: 200px;
-  background-color: #DDD;
-  text-align: center;
+    height: 200px;
+    background-color: #DDD;
+    text-align: center;
 
 }
 
 .work {
-  height: 200px;
-  text-align: center;
+    height: 200px;
+    text-align: center;
 
 }
 
 .portfolio {
-  height: 200px;
-  background: #DDD;
-  text-align: center;
+    height: 200px;
+    background: #DDD;
+    text-align: center;
 
 }
 
 .kontaktai {
-  height: 200px;
-  text-align: center;
+    height: 200px;
+    text-align: center;
 
 }
 
 .footer {
-  height: 60px;
-  background: #DDD;
+    height: 60px;
+    background: #DDD;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    border: solid #DDD; 
 
 }
 

@@ -41,6 +41,9 @@ if (isset($_GET['page'])) {
         case 'showcase':
             run_controller($page, 'showcase');
             break;
+        case 'calculator':
+            run_controller($page, 'calculator');
+            break;
         
         default:
             run_controller($page, 'home');

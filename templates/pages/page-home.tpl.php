@@ -5,7 +5,8 @@
 !-->
 <div class="main">
     <h1><?php print $page['content']['title']; ?></h1>
-
+    
+    <!--<div class="home_nuotrauka"></div>-->
     <!-- 
         Jeigu yra galimybė, kad tam tikrų elementų nespausdinsime,
         pirma patikriname ar $page['content'][?kazkoks_indeksas?]
