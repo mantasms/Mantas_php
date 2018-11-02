@@ -11,7 +11,7 @@ $page['show_header'] = true;
 // template į kurį juos spausdinsime.
 $page['content']['title'] = 'Sveiki atvykę į mano pirmąjį homepage!';
 $page['content']['subtitle'] = 'Mantas Sakaitis';
-$page['content']['alus'] = 'Kiek alaus?';
+$page['content']['alus'] = 'Ką padarėm?';
 
 // Index.php esame nurodę išspausdinti 'rendered' indekso
 // turinį iš 'content'. Todėl šiam indeksui priskiriame

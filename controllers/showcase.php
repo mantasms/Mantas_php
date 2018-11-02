@@ -9,7 +9,7 @@ $page['show_header'] = TRUE;
 
 // Template naudojami
 $page['content']['title'] = 'Mano paroda: Skaičiuoklė';
-$page['content']['subtitle'] = 'ivesk skaiciu';
+$page['content']['subtitle'] = 'įvesk skaičių';
 
 // Nuskaitom formos inputa
 if (isset($_POST['skaicius'])) {

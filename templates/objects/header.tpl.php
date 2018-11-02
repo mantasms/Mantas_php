@@ -3,7 +3,7 @@
 
     <div class="logo">
         <a href="https://codeacademy.moodle.school/login/index.php">
-            <img src="code-academy.png" alt="codeAcademyLogo">
+            <img src="/css/images/code-academy.png" alt="codeAcademyLogo">
         </a>
 
     </div>
@@ -13,7 +13,7 @@
             <il><a href=?page=home>Home</a></il>
             <il><a href=?page=cv>CV</a></il>
             <il><a href=?page=showcase>Showcase</a></il>
-            <il><a href=?page=calculator>Calculator</a></il>
+            <il><a href=?page=showcase>Calculator</a></il>
             <il class="cta">Contact</il>
         </ul>
 
